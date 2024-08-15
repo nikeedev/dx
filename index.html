@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DX Decoder</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        table {
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+        th {
+            border: 1px solid rgb(0, 0, 0);
+            width: 20px;
+            height: 20px;
+        }
+        
+        td {
+            width: 25px;
+            height: 32px;
+        }
+
+        table {
+            font-size: 20px;
+            border-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>DX Decoder</h1>
+    <details style="width: 50%; border: 2.5px solid black; border-radius: 10px; padding: 10px; ">
+        <summary>What is DX encoding..?</summary>
+        <p style="overflow-wrap: break-word;">DX (<strong>D</strong>igital inde<strong>X</strong>) encoding is a kind of code that <span style="color: #e4000a; font-weight: bold;">Kodak</span> has introduced in 1983. Today it is found on almost every film cartridge, with that black and silver code on the side:</p>
+        <img style="width:200px;" src="assets/cartridge.jpg" alt="image of a kodak 400 with the DX encoding on the front">
+        <p>More on the wiki page, which I also used its tables to create this page: &lt;<a target="_blank" href="https://en.wikipedia.org/wiki/DX_encoding">DX Encoding</a>&gt;, specifically this page: &lt;<a href="https://en.wikipedia.org/wiki/DX_encoding#Reading_DX_Camera_Auto_Sensing_codes" target="_blank"><i>"Reading DX Camera Auto Sensing codes"</i></a>&gt;</p>
+    </details>
+
+    <br>
+
+    <table id="dxCodeTable">
+        <thead>
+            <th>F</th>
+            <th>i</th>
+            <th>l</th>
+            <th>m</th>
+            <th> U</th>
+            <th>p</th>
+        </thead>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <div id="output">
+        <p>ISO: <span id="iso"></span></p>
+        <p>DIN: <span id="din"></span></p>
+        <p>Exposures: <span id="exposures"></span></p>
+        <p>Exposure tolerance: <span id="exposureTolerance"></span></p>
+    </div>
+
+    <br>
+
+    <p>Made by <a style="font-family: monospace; font-style: italic; font-weight: bold; font-size: 17.5px; color: rgb(60, 121, 235);" href="https://nikee.dev">nikeedev</a></p>
+    <script src="script.js"></script>
+</body>
+</html>
